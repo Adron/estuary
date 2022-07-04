@@ -1,0 +1,6 @@
+body {
+	& .ql-toolbar,
+	& .ql-container {
+		border-color: $border-color !important;
+	}
+}
