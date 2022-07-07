@@ -1,1 +1,9 @@
-[]
+- name: db_core
+  kind: postgres
+  configuration:
+    connection_info:
+      use_prepared_statements: false
+      database_url:
+        from_env: PG_DATABASE_URL
+      isolation_level: read-committed
+  tables: "!include db_core/tables/tables.yaml"
